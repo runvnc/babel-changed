@@ -1,0 +1,26 @@
+{
+  "name": "babel-changed",
+  "version": "1.0.0",
+  "description": "Spawns babel with --only files modified since last run",
+  "main": "lib/index.js",
+  "bin": {
+    "babel-changed": "lib/index.js"
+  },
+  "scripts": {
+    "build": "babel -d lib src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0"
+  },
+  "dependencies": {
+    "file-entry-cache": "^2.0.0",
+    "glob": "^7.1.0",
+    "hash-sum": "^1.0.2",
+    "lodash.uniq": "^4.5.0",
+    "pty.js": "^0.3.1"
+  }
+}
