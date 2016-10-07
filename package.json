@@ -1,6 +1,6 @@
 {
   "name": "babel-changed",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Spawns babel with --only files modified since last run",
   "main": "lib/index.js",
   "bin": {
