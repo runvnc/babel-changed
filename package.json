@@ -9,7 +9,9 @@
   "scripts": {
     "build": "babel -d lib src"
   },
-  "author": "",
+  "author": "Jason Livesay",
+  "keywords":["babel","changed","modified","only","make"],
+  "repository": "runvnc/babel-changed",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.16.0",
