@@ -1,6 +1,6 @@
 {
   "name": "babel-changed",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Spawns babel with --only files modified since last run",
   "main": "lib/index.js",
   "bin": {
@@ -10,7 +10,13 @@
     "build": "babel -d lib src"
   },
   "author": "Jason Livesay",
-  "keywords":["babel","changed","modified","only","make"],
+  "keywords": [
+    "babel",
+    "changed",
+    "modified",
+    "only",
+    "make"
+  ],
   "repository": "runvnc/babel-changed",
   "license": "ISC",
   "devDependencies": {
