@@ -18,14 +18,14 @@ it may not work right, so YMMV.
 
 Put something close to this in your `scripts`:
 
-`json
+````json
 "build": "babel-changed src -d lib"
 
 ```
 
 Then, assuming babel, babelrc, plugins etc. are all set up, run:
 
-`shell
+```shell
 npm run build
 ```
 
