@@ -5,12 +5,28 @@ import sum from 'hash-sum';
 import uniq from 'lodash.uniq';
 import glob from 'glob';
 import pty from 'pty.js';
+import {clearCacheById} from 'flat-cache';
 
 const key = 'stat_'+sum(process.cwd());
 
 const node = process.argv[0];
 const runonly = process.argv[1];
 const src = process.argv[2];
+
+let path = '';
+if (src == '--reset') {
+  console.log('Clearing file stats so next run will include all files..');
+  console.log(path);
+  try {
+    clearCacheById(key);
+  } catch (e) {
+    console.log('Problem clearing cache:',e);
+    process.exit(0);
+  }
+  console.log('File entry Cache cleared.');
+  process.exit(0);
+}
+
 const cmd = 'babel';
 const options = process.argv.slice(3);
 
