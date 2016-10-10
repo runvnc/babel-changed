@@ -1,7 +1,7 @@
 This runs babel on files that have been modified since the last run only.  It uses
 `file-entry-cache`.  The first run will have no modification times saved yet so it will
 run on all files.  _Note: To delete the file stat cache so that the next run will
-includes all files, use the command `babel-changed --reset`._
+include all files, use the command `babel-changed --reset`._
 
 This is just an alternative to using `--watch` for weird people like me that never got 
 in the habit of doing that.
