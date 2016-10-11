@@ -63,10 +63,11 @@ const term = pty.spawn(cmd, newArgs, {
 });
 
 term.on('data', data => {
-  process.stdout.write(data.toString());
+  process.stdout.write(data);
 });
 
-term.on('exit', async () => {
-  cache.reconcile();
+term.on('exit', (code)  => {
+  console.log('babel-changed detected exit code ',code);
+  if (code === 0) cache.reconcile();
 });
 
