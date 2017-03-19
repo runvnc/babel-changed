@@ -68,6 +68,7 @@ term.on('data', data => {
 
 term.on('exit', (code)  => {
   console.log('babel-changed detected exit code ',code);
-  if (code === 0) cache.reconcile();
+  if (code*1 == 0) cache.reconcile();
+  process.exit(code);
 });
 
