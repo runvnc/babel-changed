@@ -1,4 +1,4 @@
-This runs babel on files that have been modified since the last run only.  It uses
+This runs babel on files that have been modified since the last run only, **unless the last run failed (non-zero exit code) in which case the cache will not be reconciled and previously modified files will be re-transpiled** (otherwise the cache reconcile will cause un-transpiled files to be missed if there is an error on a different file). It uses
 `file-entry-cache`.  The first run will have no modification times saved yet so it will
 run on all files.  _Note: To delete the file stat cache so that the next run will
 include all files, use the command `babel-changed --reset`._
