@@ -1,6 +1,6 @@
 {
   "name": "babel-changed",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "Spawns babel with --only files modified since last run",
   "main": "lib/index.js",
   "bin": {
@@ -14,6 +14,13 @@
     "babel",
     "changed",
     "modified",
+    "es6",
+    "es5",
+    "transpile",
+    "development",
+    "node",
+    "js",
+    "compile",
     "only",
     "make"
   ],
@@ -32,6 +39,6 @@
     "hash-sum": "^1.0.2",
     "lodash.uniq": "^4.5.0",
     "path-exists": "^3.0.0",
-    "pty.js": "^0.3.1"
+    "node-pty": "^0.8.1"
   }
 }

@@ -4,8 +4,9 @@ import fileEntryCache from 'file-entry-cache';
 import sum from 'hash-sum';
 import uniq from 'lodash.uniq';
 import glob from 'glob';
-import pty from 'pty.js';
 import {clearCacheById} from 'flat-cache';
+
+const pty = require('node-pty');
 
 const key = 'stat_'+sum(process.cwd());
 
